@@ -1,3 +1,5 @@
+var Fly = require("flyio/dist/npm/wx")
+var fly = new Fly
 App({
   onLaunch: function () {
      //如果已经存储了用户的信息就不用在登录了
