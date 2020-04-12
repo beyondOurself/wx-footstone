@@ -1,1 +1,19 @@
 /* pages/login/login.wxss */
+.container{
+  margin: 0 80rpx;
+  
+}
+.image-wrap{
+
+  height: 155rpx;
+  margin-top: 20rpx;
+  
+}
+.image-logo{
+  height: 100%;
+  width: 100%;
+}
+
+.username{
+
+}

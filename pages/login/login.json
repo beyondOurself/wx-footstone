@@ -1,4 +1,6 @@
 {
   "usingComponents": {
+    "i-button":"../../components/iview/button",
+    "i-icon":"../../components/iview/icon"
   }
 }

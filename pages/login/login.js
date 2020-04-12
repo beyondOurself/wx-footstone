@@ -6,19 +6,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+   
   },
-
+  /**
+   * 自定义方法
+   */
+  handleClick() {
+    console.log("点击了~")
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
     _.$api.login({
-      username:"1801018",
-      password:"tea144#"
+      username: "1801018",
+      password: "tea144#"
     }).then((d) => {
-       
+      console.log(d)
     }).catch(() => {})
   },
 

@@ -1,2 +1,20 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="container">
+
+	<view class="image-wrap">
+		<image class="image-logo" src="../../static/image/login_banner.png"></image>
+	</view>
+
+	<view class="form-wrap">
+		<view class="input-wrap">
+			<i-icon type="emoji" size="28" color="#007AFF"></i-icon>
+			<input class="input_username" placeholder="请输入工号" ></input>
+			<i-icon  type="delete" size="28" color="#80848f"  ></i-icon>
+		</view>
+		<view class="input-wrap">
+			<i-icon type="emoji" size="28" color="#007AFF"></i-icon>
+			<input class="input_username" placeholder="请输入密码" ></input>
+			<i-icon  type="delete" size="28" color="#80848f"  ></i-icon>
+		</view>
+	</view>
+</view>
