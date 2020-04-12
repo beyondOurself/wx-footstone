@@ -1,3 +1,4 @@
+const _ = getApp();
 
 Page({
 
@@ -12,7 +13,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     },
+
+    _.$api.login({
+      username:"1801018",
+      password:"tea144#"
+    }).then((d) => {
+       
+    }).catch(() => {})
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

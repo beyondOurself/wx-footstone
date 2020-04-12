@@ -1,3 +1,2 @@
 <!--pages/login/login.wxml-->
 <text>pages/login/login.wxml</text>
-<van-button type="danger">危险按钮</van-button><van-button type="danger">危险按钮</van-button>

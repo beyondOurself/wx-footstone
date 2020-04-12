@@ -1,13 +1,14 @@
-var Fly = require("flyio/dist/npm/wx")
-var fly = new Fly
+const  $api =  require("./services/index")
+
 App({
   onLaunch: function () {
-     //如果已经存储了用户的信息就不用在登录了
-     if(false){
+    //如果已经存储了用户的信息就不用在登录了
+    if (false) {
       wx.switchTab({
         url: 'pages/index/home',
       })
-     }
-     
-  }
+    }
+
+  }, 
+  $api
 })
