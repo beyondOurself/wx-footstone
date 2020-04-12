@@ -6,6 +6,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    browse: "browse",
+    delete: "delete",
+    browseColor: "#80848f",
+    deleteColor: "#80848f",
    
   },
   /**
@@ -13,6 +17,40 @@ Page({
    */
   handleClick() {
     console.log("点击了~")
+  },
+  switchBrowseType() {
+
+    let browse_ = this.data.browse;
+
+    if (browse_ == "browse") {
+      this.setData({
+        browse: "browse_fill",
+        browseColor:"#007AFF"
+      })
+    } else {
+      this.setData({
+        browse: "browse",
+        browseColor:"#80848f"
+      })
+    }
+
+  },
+  switchDeleteType() {
+
+    let delete_ = this.data.delete;
+
+    if (delete_ == "delete") {
+      this.setData({
+        delete: "delete_fill",
+        deleteColor:"#007AFF"
+      })
+    } else {
+      this.setData({
+        delete: "delete",
+        deleteColor:"#80848f"
+      })
+    }
+
   },
   /**
    * 生命周期函数--监听页面加载

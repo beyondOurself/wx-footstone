@@ -7,14 +7,19 @@
 
 	<view class="form-wrap">
 		<view class="input-wrap">
-			<i-icon type="emoji" size="28" color="#007AFF"></i-icon>
-			<input class="input_username" placeholder="请输入工号" ></input>
-			<i-icon  type="delete" size="28" color="#80848f"  ></i-icon>
+			<i-icon type="emoji" size="25" color="#007AFF"></i-icon>
+			<input class="input_username" placeholder-class="placeholder_input" placeholder="请输入工号"></input>
+			<view bind:tap="switchDeleteType">
+				<i-icon type="{{delete}}" size="25" color="{{deleteColor}}"></i-icon>
+			</view>
 		</view>
-		<view class="input-wrap">
-			<i-icon type="emoji" size="28" color="#007AFF"></i-icon>
-			<input class="input_username" placeholder="请输入密码" ></input>
-			<i-icon  type="delete" size="28" color="#80848f"  ></i-icon>
+		<view class="input-wrap input-password-wrap">
+			<i-icon type="lock" size="25" color="#007AFF"></i-icon>
+			<input class="input_password" placeholder-class="placeholder_input" placeholder="请输入密码"></input>
+			<view bind:tap="switchBrowseType">
+				<i-icon type="{{browse}}" size="25" color="{{browseColor}}"></i-icon>
+			</view>
 		</view>
+		<button class="login-btn">登录</button>
 	</view>
 </view>

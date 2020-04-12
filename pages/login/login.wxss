@@ -1,19 +1,67 @@
 /* pages/login/login.wxss */
-.container{
+.container {
+
   margin: 0 80rpx;
-  
 }
-.image-wrap{
+
+.image-wrap {
 
   height: 155rpx;
   margin-top: 20rpx;
-  
+
 }
-.image-logo{
+
+.image-logo {
   height: 100%;
   width: 100%;
 }
 
-.username{
+.form-wrap {
+  margin-top: 150rpx;
+}
+
+.input-wrap,
+.login-btn {
+
+  height: 85rpx;
+  border-radius: 50rpx;
+}
+
+.input-wrap {
+
+  padding: 0 15rpx;
+
+  display: flex;
+  align-items: center;
+  border: solid 1px#d9dbde;
+  justify-content: space-between;
+
+}
+
+.input-password-wrap {
+
+  margin-top: 25rpx;
+}
+
+.input_username,
+.input_password {
+
+  width: 80%;
+}
+
+.placeholder_input {
+  color: #d2d2d2;
+  font-size: 14px;
+
+}
+
+.login-btn {
+
+  margin-top: 65rpx;
+
+  color: white;
+  font-size: 16px;
+  line-height: 85rpx;
+  background-color: #007AFF;
 
 }
