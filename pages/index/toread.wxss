@@ -1,4 +1,4 @@
 .intro {
-  margin: 30px;
   text-align: center;
+  background-color: red;
 }

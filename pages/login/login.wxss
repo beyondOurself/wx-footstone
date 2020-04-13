@@ -8,7 +8,7 @@
 .image-wrap {
 
   height: 155rpx;
-  margin-top: 20rpx;
+  margin-top: 200rpx;
 
 }
 
@@ -48,7 +48,7 @@
 .input_password {
 
   width: 80%;
-  font-weight: 600;
+ 
 }
 
 
