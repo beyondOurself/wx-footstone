@@ -1,5 +1,5 @@
 Component({
-    externalClasses: ['i-class'],
+    externalClasses: ['i-class','hover-class'],
 
     properties: {
         type: {
@@ -17,9 +17,11 @@ Component({
         color: {
             type: String,
             value: ''
+        },
+        hover:{
+            type:String,
+            value:''
         }
     },
-    methods:{
-       
-    }
+
 });

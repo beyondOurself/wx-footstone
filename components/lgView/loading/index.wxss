@@ -1,0 +1,22 @@
+/* components/lgView/loading/index.wxss */
+@keyframes spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+.icon-load {
+
+  animation: spin 1s linear infinite;
+}
+.loadingTxt{
+  
+  font-size: 34rpx;
+  font-weight: 500;
+}

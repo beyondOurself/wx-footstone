@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "i-button":"../../components/iview/button",
-    "i-icon":"../../components/iview/icon"
+    "lg-icon":"../../components/lgView/icon",
+    "lg-loading":"../../components/lgView/loading",
+    "lg-message":"../../components/lgView/message"
   }
 }

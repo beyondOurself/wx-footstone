@@ -1,23 +1,26 @@
 const _ = getApp();
-
+const {
+  $Message
+} = require('../../components/lgView/base/index');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+
     browse: "browse",
-    delete: "delete",
     browseColor: "#80848f",
-    deleteColor: "#80848f",
-   
+    is: true,
+    loadingShow: false,
+
+    username: "",
+    password: ""
+
   },
   /**
    * 自定义方法
    */
-  handleClick() {
-    console.log("点击了~")
-  },
   switchBrowseType() {
 
     let browse_ = this.data.browse;
@@ -25,44 +28,76 @@ Page({
     if (browse_ == "browse") {
       this.setData({
         browse: "browse_fill",
-        browseColor:"#007AFF"
+        browseColor: "#007AFF",
+        is: false
       })
     } else {
       this.setData({
         browse: "browse",
-        browseColor:"#80848f"
+        browseColor: "#80848f",
+        is: true
       })
     }
 
   },
-  switchDeleteType() {
+  handleDelete() {
+    this.setData({
+      username: ""
+    })
+  },
+  handleLogin() {
 
-    let delete_ = this.data.delete;
+    this.setData({
+      loadingShow: true
+    })
+    _.$api.login({
+      username: this.data.username,
+      password: this.data.password
+    }).then((res) => {
 
-    if (delete_ == "delete") {
+      if (res && res.code == 1) {
+
+        let users = res.result;
+
+        //保存用户对象
+        if (users.length > 0) {
+
+          try {
+            wx.setStorageSync('userInfo', users[0]); //跳转到 home 页面
+
+            wx.switchTab({
+              url: '/pages/index/home'
+            })
+          } catch (error) {
+            $Message({
+              content: '保存用户信息失败,重新进入!',
+              type: 'error'
+            })
+          }
+        }
+      } else {
+        $Message({
+          content: res.msg,
+          type: 'error'
+        })
+      }
+      //关闭加载框
       this.setData({
-        delete: "delete_fill",
-        deleteColor:"#007AFF"
+        loadingShow: false
       })
-    } else {
-      this.setData({
-        delete: "delete",
-        deleteColor:"#80848f"
-      })
-    }
+    }).catch(() => {
 
+      this.setData({
+        loadingShow: false
+      })
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
-    _.$api.login({
-      username: "1801018",
-      password: "tea144#"
-    }).then((d) => {
-      console.log(d)
-    }).catch(() => {})
+
   },
 
   /**

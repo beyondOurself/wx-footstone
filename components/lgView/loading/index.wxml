@@ -1,0 +1,5 @@
+<!--components/lgView/loading/index.wxml-->
+<lg-spin size="large" custom="{{custom}}" fix wx:if="{{show}}" >
+	<lg-icon type="refresh" size="{{size}}" i-class="icon-load"></lg-icon>
+	<view class="loadingTxt">{{loadingTxt}}</view>
+</lg-spin>
