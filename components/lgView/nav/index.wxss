@@ -1,0 +1,30 @@
+/* components/lgView/nav/index.wxss */
+.navBar {
+  background-color: #fff;
+}
+
+.navBarBorder {
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.title-txt {
+
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.titleBar {
+
+  display: flex;
+  align-items: center;
+
+}
+
+.titile-content-wrap {
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+}

@@ -1,1 +1,1 @@
-<view class="intro">我的</view>
+<lg-nav titleTxt="我的" ></lg-nav>

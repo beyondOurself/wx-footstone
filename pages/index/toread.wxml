@@ -1,1 +1,1 @@
-<view class="intro">待阅</view>
+<lg-nav titleTxt="待阅" neat border></lg-nav>

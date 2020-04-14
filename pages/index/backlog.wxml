@@ -1,1 +1,1 @@
-<view class="intro">待办</view>
+<lg-nav titleTxt="待办" neat border></lg-nav>

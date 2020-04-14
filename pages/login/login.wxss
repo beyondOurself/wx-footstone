@@ -1,4 +1,7 @@
 /* pages/login/login.wxss */
+page{
+  background-color: #fff;
+}
 .container {
 
   margin: 0 80rpx;
@@ -8,7 +11,7 @@
 .image-wrap {
 
   height: 155rpx;
-  margin-top: 200rpx;
+  margin-top: 50rpx;
 
 }
 

@@ -1,0 +1,17 @@
+<view class="navBar   {{ border ? 'navBarBorder' : ''}}">
+	<view class="toolBar" style="height:{{toolBar}}px"></view>
+	<view class="titleBar" style="height:{{titleBar}}px">
+		<view class="titile-content-wrap" wx:if="{{!custom}}">
+			<view class="title-before-wrap">
+				<slot name="before"></slot>
+			</view>
+			<view class="title-txt-wrap  lg-class">
+				<text class="title-txt">{{titleTxt}}</text>
+			</view>
+			<view class="title-after-wrap">
+				<slot name="after"></slot>
+			</view>
+		</view>
+		<slot></slot>
+	</view>
+</view>

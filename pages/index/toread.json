@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "lg-nav": "../../components/lgView/nav"
+  },
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white"
 }
