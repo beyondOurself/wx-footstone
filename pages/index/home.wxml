@@ -1,1 +1,3 @@
-<view class="intro">首页</view>
+<lg-nav custom>
+  <text class="company-name">巨轮智能</text>
+</lg-nav>
