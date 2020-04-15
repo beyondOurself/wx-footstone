@@ -1,1 +1,1 @@
-<lg-nav titleTxt="我的" ></lg-nav>
+<lg-nav titleTxt="我的" border ></lg-nav>
