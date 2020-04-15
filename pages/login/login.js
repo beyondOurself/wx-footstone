@@ -28,7 +28,7 @@ Page({
     if (browse_ == "browse") {
       this.setData({
         browse: "browse_fill",
-        browseColor: "#007AFF",
+        browseColor: "#2d8cf0",
         is: false
       })
     } else {

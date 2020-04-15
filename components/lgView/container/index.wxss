@@ -1,5 +1,8 @@
 
 .body{
+
+  width:750rpx;
+
   position: absolute;
   bottom: 0;
 }

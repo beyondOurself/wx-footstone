@@ -1,0 +1,2 @@
+<!--components/lgView/iconfont/index.wxml-->
+<text class="lg-class lg-iconfont lg-{{type}}" style="font-size:{{size}}px;color:{{color}};"></text>

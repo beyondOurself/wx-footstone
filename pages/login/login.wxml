@@ -7,14 +7,14 @@
 
 	<view class="form-wrap">
 		<view class="input-wrap">
-			<lg-icon type="emoji" size="25" color="#007AFF"></lg-icon>
+			<lg-icon type="emoji" size="25" color="#2d8cf0"></lg-icon>
 			<input class="input_username" model:value="{{username}}"  placeholder-class="placeholder_input" placeholder="请输入工号"></input>
 			<view bind:tap="handleDelete">
 				<lg-icon type="delete" size="25" color="#80848f" hover-class="hover"></lg-icon>
 			</view>
 		</view>
 		<view class="input-wrap input-password-wrap">
-			<lg-icon type="lock" size="25" color="#007AFF"></lg-icon>
+			<lg-icon type="lock" size="25" color="#2d8cf0"></lg-icon>
 			<input class="input_password" model:value="{{password}}" password="{{is}}" placeholder-class="placeholder_input" placeholder="请输入密码"></input>
 			<view bind:tap="switchBrowseType">
 				<lg-icon type="{{browse}}" size="25" color="{{browseColor}}"></lg-icon>

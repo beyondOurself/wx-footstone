@@ -1,15 +1,15 @@
 {
   "pages": [
+    
     "pages/index/home",
     "pages/login/login",
- 
     "pages/index/toread",
     "pages/index/backlog",
     "pages/index/me"
   ],
   "tabBar": {
-    "color": "#7A7E83",
-    "selectedColor": "#007AFF",
+    "color": "#515a6e",
+    "selectedColor": "#2d8cf0",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [

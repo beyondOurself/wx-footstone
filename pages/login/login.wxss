@@ -68,13 +68,13 @@ page{
   color: white;
   font-size: 1em;
   line-height: 85rpx;
-  background-color: #007AFF;
+  background-color: #2d8cf0;
 
 }
 
 .hover {
 
-  color: #007AFF !important;
+  color: #2d8cf0 !important;
 }
 
 .version {

@@ -1,7 +1,19 @@
-<lg-nav custom >
-  <text class="company-name">巨轮智能</text>
+<lg-nav custom>
+	<text class="company-name">巨轮智能</text>
 </lg-nav>
 <lg-con>
-  <view style="height:100rpx">1</view>
-  
+	<view class="container">
+		<view class="banner-wrap">
+			<image class="banner" src="../../static/image/banner_1.jpg"></image>
+		</view>
+		<view class="message-wrap">
+			 <view class="message-status">最新</view> <view class="message-content">我就是我是颜色不一样的烟火</view><navigator hover-class="more-hover" >更多</navigator> 
+		</view>
+    <view class="entrys-wrap">
+      <lg-entry  title="流程应用" entrys="{{processEntrys}}"></lg-entry>
+      <lg-entry  title="日常办公" entrys="{{workEntrys}}"></lg-entry>
+      <lg-entry  title="生产管理" entrys="{{processEntrys}}"></lg-entry>
+      <lg-entry  title="自助服务" entrys="{{processEntrys}}"></lg-entry>
+    </view>
+	</view>
 </lg-con>

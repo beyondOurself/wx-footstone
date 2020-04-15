@@ -1,10 +1,65 @@
-page{
+page {
   background-color: #fff;
 }
-.company-name{
+
+.company-name {
 
   margin-left: 15rpx;
 
   font-size: 1.1em;
   font-weight: bold;
 }
+
+.container {
+
+  padding: 40rpx;
+}
+
+.banner-wrap {
+
+  text-align: center;
+}
+
+.banner {
+
+  width: 680rpx;
+  height: 278rpx;
+  border-radius: 10rpx;
+}
+
+.message-wrap {
+
+  margin: 20rpx 0;
+
+  font-size: .8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: centerP;
+
+}
+
+.message-status {
+
+  padding:5rpx 10rpx ;
+  border-radius: 5rpx;
+
+  color: #eb5e58;
+	background-color: #ffe6e5;
+}
+
+.message-content {
+
+  padding:0 1em;
+
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+
+}
+.more-hover{
+
+  color: #007aff;
+}
+
+.entrance-wrap {}
