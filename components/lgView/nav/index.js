@@ -35,7 +35,6 @@ Component({
     toolBar: 0,
     navBar: 0,
     titleBar: 0,
-
   },
 
   /**

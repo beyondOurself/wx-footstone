@@ -1,3 +1,7 @@
-<lg-nav custom>
+<lg-nav custom >
   <text class="company-name">巨轮智能</text>
 </lg-nav>
+<lg-con>
+  <view style="height:100rpx">1</view>
+  
+</lg-con>

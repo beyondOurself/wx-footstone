@@ -1,0 +1,6 @@
+<scroll-view scroll-y   class="lg-class body"  style="top: {{navBar}}px;" 
+upper-threshold="{{uppder}}"
+lower-threshold="{{lower}}"
+bindscroll="handleScroll" bindscrolltolower="handleScrollTolower" bindscrolltoupper="handleScrollToupper">
+  <slot></slot>
+</scroll-view>
