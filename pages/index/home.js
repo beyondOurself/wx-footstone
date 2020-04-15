@@ -41,7 +41,7 @@ Component({
       }
     ],
     workEntrys: [{
-        url: "",
+        url: "/pages/urgency/urgency",
         type: "weiwangguanicon-defuben-",
         color: "#ed3f14",
         name: "紧急应用"
