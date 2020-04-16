@@ -12,8 +12,8 @@
     <view class="entrys-wrap">
       <lg-entry  title="流程应用" entrys="{{processEntrys}}"></lg-entry>
       <lg-entry  title="日常办公" entrys="{{workEntrys}}"></lg-entry>
-      <lg-entry  title="生产管理" entrys="{{processEntrys}}"></lg-entry>
-      <lg-entry  title="自助服务" entrys="{{processEntrys}}"></lg-entry>
+      <lg-entry  title="生产管理" entrys="{{productionEntrys}}"></lg-entry>
+      <lg-entry  title="自助服务" entrys="{{selfEntrys}}"></lg-entry>
     </view>
 	</view>
 </lg-con>

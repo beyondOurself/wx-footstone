@@ -2,8 +2,9 @@
 	<text class="title">{{title}}</text>
 	<view class="entry-wrap">
 		<block wx:for="{{entrys}}" wx:key="index">
-			<navigator url="{{item.url}}" class="entry">
-				<lg-iconfont type="{{item.type}}" color="{{item.color}}" size="{{size}}"></lg-iconfont>
+			<navigator url="{{item.url}}" class="entry" style="order:{{item.order}};">
+			
+				<lg-iconfont type="{{item.type}}" color="{{item.color}}" size="{{size}}" custom="{{ item.isCustom ? customIcon : ''}}"></lg-iconfont>
 				<text class="name">{{item.name}}</text>
 			</navigator>
 		</block>

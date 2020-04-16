@@ -1,23 +1,26 @@
 // components/lgView/iconfont/index.js
 Component({
-  options:{
-    multipleSlots:true,
+  options: {
+    multipleSlots: true,
     styleIsolation: 'apply-shared'
   },
-  externalClasses:["lg-class"],
+  externalClasses: ["lg-class"],
   /**
    * 组件的属性列表
    */
   properties: {
-    type:{
-      type:String
+    type: {
+      type: String
     },
-    size:{
-      type:[String,Number],
-      value:"25"
+    size: {
+      type: [String, Number],
+      value: "25"
     },
-    color:{
-      type:String
+    color: {
+      type: String
+    },
+    custom: {
+      type: String
     }
   },
 
@@ -25,7 +28,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    
+
   },
 
   /**

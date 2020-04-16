@@ -24,6 +24,13 @@ Component({
     },
     entrys:{
       type:Array
+    },
+    order:{
+      type:[String,Number]
+    },
+    customIcon:{
+      type:String,
+      value:"iconfont"
     }
   },
 
