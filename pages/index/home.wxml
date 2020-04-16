@@ -10,10 +10,7 @@
 			 <view class="message-status">最新</view> <view class="message-content">我就是我是颜色不一样的烟火</view><navigator hover-class="more-hover" >更多</navigator> 
 		</view>
     <view class="entrys-wrap">
-      <lg-entry  title="流程应用" entrys="{{processEntrys}}"></lg-entry>
-      <lg-entry  title="日常办公" entrys="{{workEntrys}}"></lg-entry>
-      <lg-entry  title="生产管理" entrys="{{productionEntrys}}"></lg-entry>
-      <lg-entry  title="自助服务" entrys="{{selfEntrys}}"></lg-entry>
+		<lg-entry  entryList="{{entryList}}"></lg-entry>
     </view>
 	</view>
 </lg-con>

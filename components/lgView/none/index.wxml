@@ -1,0 +1,2 @@
+
+<view class="lg-class body" wx:if="{{isShow}}" ><image class="image" src="/static/image/none.png"></image><text>空空如也~</text></view>

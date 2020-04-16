@@ -1,1 +1,4 @@
-<lg-nav titleTxt="待阅"  border></lg-nav>
+<lg-nav titleTxt="待阅"  border>
+<lg-none isShow></lg-none>
+    <lg-con></lg-con>
+</lg-nav>

@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "lg-nav": "../../components/lgView/nav"
+    "lg-nav": "../../components/lgView/nav",
+    "lg-con": "../../components/lgView/container",
+    "lg-none": "../../components/lgView/none"
   },
   "navigationStyle": "custom"
 }

@@ -10,7 +10,7 @@ module.exports = {
   method:POST
  */
   home: function (params) {
-    return fly.request('/login',
+    return fly.request('/init',
       params, {
         method: "post"
       }

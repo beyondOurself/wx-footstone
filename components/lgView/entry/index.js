@@ -22,7 +22,7 @@ Component({
     color:{
       type:String
     },
-    entrys:{
+    entryList:{
       type:Array
     },
     order:{

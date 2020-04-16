@@ -1,2 +1,1 @@
-<!--components/lgView/template/index.wxml-->
-<text>components/lgView/template/index.wxml</text>
+<view class="lg-class body">@~@</view>
