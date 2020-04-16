@@ -9,42 +9,48 @@ Component({
             url: "",
             isCustom: true,
             type: "icon-daiyue",
-            color: "#ff9900",
+            color: "",
+            // color: "#ff9c00",
             name: "待阅"
           },
           {
             url: "",
             isCustom: true,
             type: "icon-yiyue",
-            color: "#19be6b",
+            color: "",
+            // color: "#08b1c4",
             name: "已阅"
           },
           {
             url: "",
             isCustom: true,
             type: "icon-daiban1",
-            color: "#ed3f14",
+            color: "",
+            // color: "#f6686e",
             name: "待办"
           },
           {
             url: "",
             isCustom: true,
             type: "icon-yibanshixiang",
-            color: "#19be6b",
+            color: "",
+            // color: "#08b1c4",
             name: "已办"
           },
           {
             url: "",
             isCustom: true,
             type: "icon-yitijiao",
-            color: "#19be6b",
+            color: "",
+            // color: "#08b1c4",
             name: "已提交"
           },
           {
             url: "",
             isCustom: true,
             type: "icon-qidongtiaojian",
-            color: "#2d8cf0",
+            color: "",
+            // color: "#2d8cf0",
             name: "已启动"
           }
         ]
@@ -54,7 +60,7 @@ Component({
         entrys: [{
             url: "/pages/urgency/urgency",
             type: "lg-weiwangguanicon-defuben-",
-            color: "#ed3f14",
+            color: "#f6686e",
             name: "紧急应用"
           },
           {
