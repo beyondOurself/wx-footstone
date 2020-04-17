@@ -1,0 +1,60 @@
+/* components/lgView/template/index.wxss */
+.body {
+
+  padding-left: 30rpx;
+
+  background-color: #fff;
+}
+
+.content-wrap {
+
+  height: 100%;
+  padding: 20rpx;
+  padding-left: 0;
+
+
+  border-bottom: solid 1rpx #e9eaec;
+
+}
+
+.content-main {
+
+  display: flex;
+}
+
+.icon-wrap {
+
+  height: 80rpx;
+  width: 80rpx;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline-wrap {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content-footer {
+
+  font-size: .85em;
+  color: #80848f;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description{
+
+  width: 20em;
+
+  font-size: .85em;
+  color: #80848f;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

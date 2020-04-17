@@ -13,6 +13,7 @@ Page({
     browseColor: "#80848f",
     is: true,
     loadingShow: false,
+    loadingBtnShow: false,
 
     username: "",
     password: ""
@@ -48,17 +49,19 @@ Page({
   handleLogin() {
 
     this.setData({
-      loadingShow: true
+      loadingBtnShow: true
     })
+
     _.$api.login({
       username: this.data.username,
       password: this.data.password
-    }).then((res) => {
+    }).then(({
+      res
+    }) => {
 
       if (res && res.code == 1) {
 
         let users = res.result;
-
         //保存用户对象
         if (users.length > 0) {
 
@@ -69,6 +72,7 @@ Page({
               url: '/pages/index/home'
             })
           } catch (error) {
+
             $Message({
               content: '保存用户信息失败,重新进入!',
               type: 'error'
@@ -83,12 +87,17 @@ Page({
       }
       //关闭加载框
       this.setData({
-        loadingShow: false
+        loadingBtnShow: false
       })
     }).catch(() => {
 
+      $Message({
+        content: '请求失败!检查网络是否通畅!',
+        type: 'error'
+      })
+
       this.setData({
-        loadingShow: false
+        loadingBtnShow: false
       })
     })
   }

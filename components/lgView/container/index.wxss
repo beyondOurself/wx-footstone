@@ -1,7 +1,8 @@
 
 .body{
 
-  width:750rpx;
+  width:100%;
+  margin-top: 1rpx;
 
   position: absolute;
   bottom: 0;

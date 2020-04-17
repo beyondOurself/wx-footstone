@@ -1,3 +1,4 @@
+const _ = getApp();
 const systemInfoBehavior = require("../../behaviors/systemInfoBehavior.js");
 
 Component({
@@ -398,6 +399,36 @@ Component({
       })
     },
   },
+  methods:{
+      init(){
+        
+        console.log(getCurrentPages());
+
+        _.$api.listAllTodo({}).then(({
+          res
+        }) => {
+    
+          if (res && res.code === 0) {
+    
+            
+            let _meetingList = res.meetingList;
+            let _taskList = res.taskList;
+            let _workflowTaskList = res.workflowTaskList;
+            let arr = [..._meetingList, ..._taskList, ..._workflowTaskList];
+            let arrLength = arr.length;
+    
+            wx.setTabBarBadge({
+              index: 2,
+              text: arrLength+""
+            })
+
+          }
+
+        }).catch(() => {
+  
+        })
+      }
+  },
   pageLifetimes: {
 
     show() {
@@ -414,6 +445,8 @@ Component({
 
   attached: function () {
 
+    //预加载tab的相关数据
+    this.init();
 
   }
 

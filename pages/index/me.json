@@ -3,7 +3,8 @@
     "lg-nav": "../../components/lgView/nav",
     "lg-con": "../../components/lgView/container",
     "lg-none": "../../components/lgView/none",
-    "lg-iconfont": "../../components/lgView/iconfont"
+    "lg-iconfont": "../../components/lgView/iconfont",
+    "lg-modal": "../../components/lgView/modal"
   },
   "navigationStyle": "custom"
 }

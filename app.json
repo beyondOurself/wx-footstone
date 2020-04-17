@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/index/me",
-    "pages/index/home",
     "pages/login/login",
-    "pages/index/toread",
+    "pages/index/me",
     "pages/index/backlog",
-    
+    "pages/index/home",
+
+    "pages/index/toread",
     "pages/urgency/urgency"
   ],
   "tabBar": {

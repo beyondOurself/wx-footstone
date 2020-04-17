@@ -1,7 +1,7 @@
+const {IS_MOCK} = require("../config/index")
 const Fly = require("../lib/commonjs/wx");
 const resMocks = require("../mock/index");
 const fly = new Fly();
-const IS_MOCK = true;
 //定义公共headers
 fly.config.headers = {
 	'content-type': 'application/x-www-form-urlencoded'

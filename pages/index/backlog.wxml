@@ -1,4 +1,10 @@
-<lg-nav titleTxt="待办"  border>
-    <lg-none isShow></lg-none>
-    <lg-con></lg-con>
-</lg-nav>
+<lg-nav titleTxt="待办"  border>  </lg-nav>
+ <lg-none isShow="{{isNoneShow}}"></lg-none>
+    <lg-con>
+      <view class="container">
+      <block wx:for="{{backlogList}}" wx:key="index">
+        <lg-item iconCustom="iconfont" bgColor="{{item.color}}" iconType="{{item.iconType}}" taskName="{{item.taskName || item.workflow || item.title}}" taskStateText="{{item.taskStateText || item.taskTitle || item.roomLocation}}" assignTo="{{item.workflowOriginator || item.priorityText  || item.publishEmployeeName}}" time="{{ item.startDate || item.startTime || item.gmtCreate  }}" originType="{{item.originType}}" ></lg-item>
+      </block>
+      </view>
+    </lg-con>
+    <lg-loading show="{{loadingShow}}"></lg-loading>

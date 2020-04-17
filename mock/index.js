@@ -2,31 +2,38 @@ const {
   users
 } = require("./loginMock");
 const {
+  listAllTodo
+} = require("./backlogMock");
+const {
   isInArr
 } = require("../utils/common")
 module.exports = function resMocks(reqUrl, params) {
+  let data = {
+    mockStatus: true
+  }
   switch (reqUrl) {
     case "/login":
-      let data = {
-        mockStatus: true
-      };
       let userInfo = isInArr(params, users);
       if (userInfo && userInfo.length > 0) {
-        data.result = userInfo;
-        data.msg = "登录成功!";
-        data.code = 1;
+        data.res = {
+          result: userInfo,
+          msg: "登录成功!",
+          code: 1
+        }
       } else {
-        data.msg = "登录失败!";
-        data.code = -1;
+        data.res = {
+          msg: "登录失败!",
+          code: -1
+        }
       }
-      return data;
+      break;
+    case "/listAllTodo":
+      data.res = listAllTodo;
       break;
     default: {
-      return {
-        mockStatus: false
-      }
       break;
     }
-
   }
+
+  return data;
 }

@@ -5,8 +5,8 @@
       <view class="employee-infos">
         <image class="logo" src="../../static/image/logo.png"></image>
         <view>
-          <view>沈灿龙</view>
-          <view class="username">工号:1801018</view>
+          <view>{{employeeInfos.employee_name}}</view>
+          <view class="username">工号:{{employeeInfos.username}}</view>
         </view>
       </view>
       <view class="qrcode">
@@ -59,8 +59,9 @@
 			<view class="with-wrap">
       <view> <lg-iconfont custom="iconfont" type="icon-guanyu" color="#ff9c00" size="14"></lg-iconfont> <text>  关于巨轮智能-App</text></view>
       <text>v1.4.5</text></view>
-			<view class="logout-wrap">退出登录</view>
+			<view class="logout-wrap" bind:tap="logout" >退出登录</view>
 		</view>
 
 	</view>
 </lg-con>
+<lg-modal title="确定退出登录!"  visible="{{modalVisible}}"bind:ok="handleOk"  bind:cancel="handleCancel" ></lg-modal>
