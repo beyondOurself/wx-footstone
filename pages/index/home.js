@@ -59,7 +59,7 @@ Component({
         title: "日常办公",
         entrys: [{
             url: "/pages/urgency/urgency",
-            type: "lg-weiwangguanicon-defuben-",
+            type: "weiwangguanicon-defuben-",
             color: "#f6686e",
             name: "紧急应用"
           },

@@ -18,7 +18,10 @@
 .header-wrap {
 
   height: 150rpx;
+  padding:0 35rpx;
 
+  display: flex;
+  justify-content: space-between;
 }
 
 .infos-wrap {
@@ -67,6 +70,7 @@
   justify-content: center;
   align-items: center;
   border: .5px solid #e9eaec; 
+  font-size: .85em;
 }
 .grid-item-content{
 
@@ -74,4 +78,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.employee-infos{
+    
+  display: flex;
+  
+}
+.logo{
+
+  height: 90rpx;
+  width: 90rpx;
+  margin-right: 20rpx;
+}
+.username{
+
+   font-size: .9em;
+   color: #b4b4b4;
+}
+.icon-right{
+
+  margin-left: 20rpx;
 }

@@ -1,7 +1,19 @@
 <lg-nav titleTxt="我的" border></lg-nav>
 <lg-con>
 	<view class="container">
-		<view class="header-wrap"></view>
+		<view class="header-wrap">
+      <view class="employee-infos">
+        <image class="logo" src="../../static/image/logo.png"></image>
+        <view>
+          <view>沈灿龙</view>
+          <view class="username">工号:1801018</view>
+        </view>
+      </view>
+      <view class="qrcode">
+        <lg-iconfont  custom="iconfont" type="icon-erweima1" color="#b4b4b4"size="20" ></lg-iconfont>
+        <lg-iconfont class="icon-right" type="right" color="#b4b4b4"size="18" ></lg-iconfont>
+      </view>
+    </view>
 		<view class="infos-wrap">
 			<view class="grid">
 				<view class="grid-item salary-information">
@@ -44,7 +56,9 @@
 		</view>
 		<view class="operation-wrap"></view>
 		<view class="footer-wrap">
-			<view class="with-wrap"> <text>关于巨轮智能-App</text> <text>v1.4.5</text></view>
+			<view class="with-wrap">
+      <view> <lg-iconfont custom="iconfont" type="icon-guanyu" color="#ff9c00" size="14"></lg-iconfont> <text>  关于巨轮智能-App</text></view>
+      <text>v1.4.5</text></view>
 			<view class="logout-wrap">退出登录</view>
 		</view>
 
