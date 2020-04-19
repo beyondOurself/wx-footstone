@@ -59,7 +59,7 @@ page {
 }
 .more-hover{
 
-  color: #007aff;
+  color: #2d8cf0;
 }
 
 .entrance-wrap {}

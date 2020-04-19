@@ -1,12 +1,16 @@
 const {
+  isInArr
+} = require("../utils/common");
+const {
   users
 } = require("./loginMock");
 const {
   listAllTodo
 } = require("./backlogMock");
 const {
-  isInArr
-} = require("../utils/common")
+  getMessageList
+} = require("./homeMock");
+
 module.exports = function resMocks(reqUrl, params) {
   let data = {
     mockStatus: true
@@ -29,6 +33,9 @@ module.exports = function resMocks(reqUrl, params) {
       break;
     case "/listAllTodo":
       data.res = listAllTodo;
+      break;
+    case "/messageBox/pageList":
+      data.res = getMessageList;
       break;
     default: {
       break;

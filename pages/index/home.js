@@ -399,35 +399,33 @@ Component({
       })
     },
   },
-  methods:{
-      init(){
-        
-        console.log(getCurrentPages());
+  methods: {
+    init() {
 
-        _.$api.listAllTodo({}).then(({
-          res
-        }) => {
-    
-          if (res && res.code === 0) {
-    
-            
-            let _meetingList = res.meetingList;
-            let _taskList = res.taskList;
-            let _workflowTaskList = res.workflowTaskList;
-            let arr = [..._meetingList, ..._taskList, ..._workflowTaskList];
-            let arrLength = arr.length;
-    
-            wx.setTabBarBadge({
-              index: 2,
-              text: arrLength+""
-            })
+      _.$api.listAllTodo({}).then(({
+        res
+      }) => {
 
-          }
+        if (res && res.code === 0) {
 
-        }).catch(() => {
-  
-        })
-      }
+
+          let _meetingList = res.meetingList;
+          let _taskList = res.taskList;
+          let _workflowTaskList = res.workflowTaskList;
+          let arr = [..._meetingList, ..._taskList, ..._workflowTaskList];
+          let arrLength = arr.length;
+
+          wx.setTabBarBadge({
+            index: 2,
+            text: arrLength + ""
+          })
+
+        }
+
+      }).catch(() => {
+
+      })
+    }
   },
   pageLifetimes: {
 

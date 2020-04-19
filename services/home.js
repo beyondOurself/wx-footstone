@@ -1,16 +1,29 @@
-const fly = require("../lib/commonjs/wx")
+const fly = require("../utils/httpRequest")
 
 
 module.exports = {
 
   /* 
   author: longlong ,
-  depict : 用户登录 ,
-  params:{ username,password,uuid,clientId,version}
+  depict : 数据初始化 ,
+  params:
   method:POST
  */
-  home: function (params) {
+  init: function (params) {
     return fly.request('/init',
+      params, {
+        method: "post"
+      }
+    )
+  },
+  /* 
+  author: longlong ,
+  depict : 获取消息列表 ,
+  params:
+  method:POST
+ */
+  getMessageList: function (params) {
+    return fly.request('/messageBox/pageList',
       params, {
         method: "post"
       }

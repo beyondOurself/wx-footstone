@@ -1,12 +1,13 @@
 {
   "pages": [
+    "pages/message/message",
+    "pages/index/backlog",
     "pages/login/login",
     "pages/index/me",
-    "pages/index/backlog",
     "pages/index/home",
-
     "pages/index/toread",
     "pages/urgency/urgency"
+    
   ],
   "tabBar": {
     "color": "#515a6e",

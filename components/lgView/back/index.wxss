@@ -1,0 +1,7 @@
+/* components/lgView/template/index.wxss */
+.body {
+
+  position: fixed;
+  bottom: 50rpx;
+  background-color: red;
+}

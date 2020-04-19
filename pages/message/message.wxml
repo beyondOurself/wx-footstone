@@ -1,0 +1,13 @@
+<lg-nav titleTxt="消息" border >
+ <!-- <navigator open-type="navigateBack" url="../"><lg-icon type="return" size="25"  /></navigator>  </view> -->
+</lg-nav>
+
+<lg-con enabled triggered="{{conTriggered}}" bind:onrefresh="handleConRefresh">
+	<view class="container">
+
+		<lg-item></lg-item>
+	</view>
+</lg-con>
+<lg-loading show="{{loadingShow}}"></lg-loading>
+<lg-none isShow="{{isNoneShow}}"></lg-none>
+<lg-back>666</lg-back>
