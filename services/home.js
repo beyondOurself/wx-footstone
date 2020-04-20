@@ -5,12 +5,12 @@ module.exports = {
 
   /* 
   author: longlong ,
-  depict : 数据初始化 ,
+  depict : 获取模块入口 ,
   params:
   method:POST
  */
-  init: function (params) {
-    return fly.request('/init',
+  getEntyList: function (params) {
+    return fly.request('/entryList',
       params, {
         method: "post"
       }

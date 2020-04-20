@@ -1,0 +1,12 @@
+<!--pages/message/message_detail.wxml-->
+<lg-nav titleTxt="消息详情" border>
+</lg-nav>
+<lg-con enabled triggered="{{conTriggered}}" bind:onrefresh="handleConRefresh">
+  <view class="container" >
+  <view class="body">
+    <view class="title-wrap">{{title}}</view>
+    <view class="content-wrap">{{content}}</view>
+    </view>
+  </view>
+</lg-con>
+<lg-back></lg-back>

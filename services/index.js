@@ -4,5 +4,7 @@
 module.exports = {
     ...require("./login"),
     ...require("./home"),
-    ...require("./backlog")
+    ...require("./backlog"),
+    ...require("./toread"),
+    ...require("./emolument"),
 }

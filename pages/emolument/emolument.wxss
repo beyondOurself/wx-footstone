@@ -1,0 +1,25 @@
+.content-wrap {
+
+  display: flex;
+  align-items: center;
+}
+
+.separate {
+
+  height: 65rpx;
+  width: 2px;
+  margin-right: 20rpx;
+
+  background-color: #2d8cf0;
+}
+.time,.wage{
+  font-weight: bold;
+}
+.wage{
+  margin-right: 10rpx;
+}
+.desc{
+
+  font-size: .8em;
+  color:#bbbec4 ;
+}

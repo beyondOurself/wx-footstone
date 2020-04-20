@@ -1,13 +1,14 @@
 {
   "pages": [
+    "pages/index/home",
+    "pages/urgency/urgency",
+    "pages/emolument/emolument",
+    "pages/login/login",
     "pages/message/message",
     "pages/index/backlog",
-    "pages/login/login",
     "pages/index/me",
-    "pages/index/home",
     "pages/index/toread",
-    "pages/urgency/urgency"
-    
+    "pages/message/message_detail"
   ],
   "tabBar": {
     "color": "#515a6e",

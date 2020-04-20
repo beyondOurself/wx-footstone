@@ -1,4 +1,8 @@
-<lg-nav titleTxt="待阅"  border>
-<lg-none isShow></lg-none>
-    <lg-con enabled ></lg-con>
-</lg-nav>
+<lg-nav titleTxt="待阅"  border>  </lg-nav>
+ <lg-none isShow="{{isNoneShow}}"></lg-none>
+    <lg-con enabled triggered="{{conTriggered}}"  bind:onrefresh="handleConRefresh">
+      <view class="container">
+      </view>
+    </lg-con>
+    <lg-loading show="{{loadingShow}}"></lg-loading>
+    <lg-toast id="toast" />

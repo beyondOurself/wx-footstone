@@ -2,9 +2,9 @@
 	<text class="title">{{eItem.title}}</text>
 	<view class="entry-wrap">
 		<block wx:for="{{eItem.entrys}}" wx:key="index">
-			<navigator url="{{item.url}}" class="entry" style="order:{{item.order}};">
+			<navigator url="{{item.url}}" class="entry" style="order:{{item.order}};" >
 			
-				<lg-iconfont type="{{item.type}}" color="{{item.color}}" size="{{size}}" custom="{{ item.isCustom ? customIcon : ''}}"></lg-iconfont>
+				<lg-iconfont type="{{item.type}}" color="{{item.color}}" size="{{size}}" custom="{{ item.isCustom ? customIcon : ''}}" data-isopen="{{item.isOpen}}" bind:tap="handleNavigator" ></lg-iconfont>
 				<text class="name">{{item.name}}</text>
 			</navigator>
 		</block>

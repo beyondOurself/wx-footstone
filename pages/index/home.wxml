@@ -1,5 +1,4 @@
-<lg-nav custom>
-	<text class="company-name">巨轮智能</text>
+<lg-nav titleTxt="巨轮智能">
 </lg-nav>
 <lg-con>
 	<view class="container">
@@ -7,10 +6,11 @@
 			<image class="banner" src="../../static/image/banner_1.jpg"></image>
 		</view>
 		<view class="message-wrap">
-			 <view class="message-status">新闻动态</view> <view class="message-content">我就是我是颜色不一样的烟火</view><navigator url="/pages/message/message" hover-class="more-hover" >更多</navigator> 
+			 <view class="message-status">消息</view> <view class="message-content"> <navigator url="/pages/message/message_detail?title={{messageNewestItem.title}}&content={{messageNewestItem.content}}" >{{messageNewestItem.title}}</navigator> </view><navigator url="/pages/message/message" hover-class="more-hover" ><lg-iconfont type="gengduo" size="15" > </lg-iconfont>	</navigator> 
 		</view>
     <view class="entrys-wrap">
-		<lg-entry  entryList="{{entryList}}"></lg-entry>
+		<lg-entry  entryList="{{entryList}}" bind:entryNavigator="handleEntryNavigator"></lg-entry>
     </view>
 	</view>
 </lg-con>
+<lg-toast id="toast"></lg-toast>

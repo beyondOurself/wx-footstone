@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "lg-iconfont":"../iconfont"
+    "lg-iconfont":"../iconfont",
+    "lg-toast":"../toast"
   }
 }

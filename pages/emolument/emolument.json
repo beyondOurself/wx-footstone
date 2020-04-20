@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "lg-nav": "../../components/lgView/nav",
+    "lg-con": "../../components/lgView/container",
+    "lg-none": "../../components/lgView/none",
+    "lg-loading": "../../components/lgView/loading",
+    "lg-back": "../../components/lgView/back",
+    "lg-icon" : "../../components/lgView/icon",
+    "lg-iconfont" : "../../components/lgView/iconfont",
+    "lg-item" : "../../components/lgView/item"
+  },
+  "navigationStyle": "custom"
+}

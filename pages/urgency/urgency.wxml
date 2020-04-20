@@ -1,2 +1,35 @@
-<!--pages/urgency/urgency.wxml-->
-<text>pages/urgency/urgency.wxml</text>
+<lg-nav titleTxt="紧急应用" border>
+</lg-nav>
+<lg-con>
+
+	<view class="container-warp">
+		<view class="title">
+			<lg-iconfont custom="iconfont" type="icon-saomiao" size="15"></lg-iconfont> <text class="qrcode-txt">用餐二维码</text>
+		</view>
+		<view class="content-wrap">
+			<view class="content">
+				<view class="qrCode-box">
+					<canvas class="canvas-code" canvas-id="myQrcode" style="background:#fff;width: 200px;height: 200px;" />
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="container-warp">
+		<view class="title">
+			<lg-iconfont custom="iconfont" type="icon-saomiao" size="15"></lg-iconfont> <text class="qrcode-txt">请到各个办公楼,车间固定打卡点扫描打卡</text>
+		</view>
+		<view class="content-wrap">
+			<view class="content">
+				<view class="scan-box" bind:tap="handleScanCode">
+   
+              <lg-iconfont custom="iconfont" type="icon-saomiao" size="120" color="#2d8cf0"></lg-iconfont>
+
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+</lg-con>
+<lg-loading show="{{loadingShow}}"></lg-loading>
+<lg-back></lg-back>

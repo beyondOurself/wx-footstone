@@ -2,11 +2,12 @@
 	<view class="toolBar" style="height:{{toolBar}}px"></view>
 	<view class="titleBar" style="height:{{titleBar}}px">
 		<view class="titile-content-wrap" wx:if="{{!custom}}">
-			<view class="title-before-wrap">
+			<view class="title-before-wrap" >
+				<text class="title-txt">{{titleTxt}}</text>
 				<slot name="before"></slot>
 			</view>
 			<view class="title-txt-wrap  lg-class">
-				<text class="title-txt">{{titleTxt}}</text>
+				<slot name="middle"></slot>
 			</view>
 			<view class="title-after-wrap">
 				<slot name="after"></slot>

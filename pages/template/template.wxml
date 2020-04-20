@@ -1,0 +1,8 @@
+<lg-nav titleTxt="消息" border>
+</lg-nav>
+<lg-con enabled triggered="{{conTriggered}}" bind:onrefresh="handleConRefresh">
+	
+</lg-con>
+<lg-loading show="{{loadingShow}}"></lg-loading>
+<lg-none isShow="{{isNoneShow}}"></lg-none>
+<lg-back></lg-back>

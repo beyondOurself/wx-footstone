@@ -1,7 +1,18 @@
 /* components/lgView/template/index.wxss */
 .body {
 
+  padding: 10rpx 20rpx 10rpx 15rpx;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-left: 0;
+  border:solid 1px #e9eaec;
+
   position: fixed;
-  bottom: 50rpx;
-  background-color: red;
+  bottom: 80rpx;
+  right: 0;
+
+  opacity: .8;
+  color: #2d8cf0;
+  background-color: #fff;
+
 }

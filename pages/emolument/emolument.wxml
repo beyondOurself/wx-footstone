@@ -1,0 +1,26 @@
+<lg-nav titleTxt="薪酬信息" border>
+</lg-nav>
+<lg-con enabled triggered="{{conTriggered}}" bind:onrefresh="handleConRefresh">
+	<block wx:for="{{employeeSalaryDetailList}}" wx:key="index">
+		<lg-item class="animated  {{ index % 2 == 0 ? 'bounceInLeft' :  'bounceInRight' }}">
+			<view slot="content-nav">
+				<view class="nav-wrap">
+					<text class="wage">￥{{item.theTrueSalary}}</text>
+					<lg-iconfont type="right" size="15"></lg-iconfont>
+				</view>
+			</view>
+			<view slot="content-desc">
+				<view class="content-wrap">
+					<view class="separate"></view>
+					<view>
+						<view class="title"><text class="time">{{item.recordDate}}</text> 工资</view>
+						<view class="desc">个人实际领取薪酬</view>
+					</view>
+				</view>
+			</view>
+		</lg-item>
+	</block>
+</lg-con>
+<lg-loading show="{{loadingShow}}"></lg-loading>
+<lg-none isShow="{{isNoneShow}}"></lg-none>
+<lg-back></lg-back>

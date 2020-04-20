@@ -1,1 +1,62 @@
-/* pages/message/message.wxss */
+.container{
+  background-color: #fff;
+}
+.item-list-wrap{
+  
+  padding-left: 20rpx;
+  
+}
+.item-wrap{
+   
+  padding: 20rpx 0;
+  border-bottom: solid 1rpx #e9eaec;
+
+  display: flex;
+  justify-content: space-between;
+ 
+  font-size: .85em;
+  color: #80848f;
+}
+.item-logo-wrap{
+
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d8cf0;
+}
+
+.item-after-wrap{
+
+  display: flex;
+  align-items: center;
+}
+.item-before-wrap{
+
+  display: flex;
+  align-items: center;
+}
+.item-content-wrap{
+
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-before-wrap{
+   
+  padding-right: 20rpx;
+}
+
+.item-message-status{
+
+  font-size: .8em;
+  padding: 5rpx;
+  border-radius: 10rpx;
+
+  color: #fff;
+  background-color: #ed3f14;
+}

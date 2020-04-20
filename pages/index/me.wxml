@@ -17,37 +17,37 @@
 		<view class="infos-wrap">
 			<view class="grid">
 				<view class="grid-item salary-information">
-					<navigator class="grid-item-content">
+					<navigator class="grid-item-content" url="/pages/emolument/emolument" >
 						<lg-iconfont custom="iconfont" type="icon-shenghuobutie" color="#ff9c00" ></lg-iconfont>
 						<text>薪酬信息</text>
 					</navigator>
 				</view>
 				<view class="grid-item attendance-information">
-					<navigator class="grid-item-content">
+					<navigator class="grid-item-content" url="." >
 						<lg-iconfont custom="iconfont" type="icon-xinzengricheng" color="#f6686e" ></lg-iconfont>
 						<text>考勤信息</text>
 					</navigator>
 				</view>
 				<view class="grid-item billing-information">
-					<navigator class="grid-item-content">
+					<navigator class="grid-item-content" url="." >
 						<lg-iconfont custom="iconfont" type="icon-fapiao" color="#08b1c4"></lg-iconfont>
 						<text>开票信息</text>
 					</navigator>
 				</view>
 				<view class="grid-item asset-information">
-					<navigator class="grid-item-content">
+					<navigator class="grid-item-content" url="." >
 						<lg-iconfont custom="iconfont" type="icon-gudingzichanguanli" color="#08b1c4"></lg-iconfont>
 						<text>资产信息</text>
 					</navigator>
 				</view>
 				<view class="grid-item my-assignment">
-					<navigator class="grid-item-content">
+					<navigator class="grid-item-content" url="." >
 						<lg-iconfont custom="iconfont" type="icon-renwu3" color="#ff9c00"></lg-iconfont>
 						<text>我的任务</text>
 					</navigator>
 				</view>
 				<view class="grid-item coupon">
-					<navigator class="grid-item-content">
+					<navigator class="grid-item-content" url="." >
 						<lg-iconfont custom="iconfont" type="icon-youhuiquan" color="#f6686e"></lg-iconfont>
 						<text>优惠卷</text>
 					</navigator>

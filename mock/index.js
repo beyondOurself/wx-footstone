@@ -8,8 +8,14 @@ const {
   listAllTodo
 } = require("./backlogMock");
 const {
-  getMessageList
+  listAllToread
+} = require("./toreadMock");
+const {
+  getMessageList,getEntyList
 } = require("./homeMock");
+const {
+  employeeSalaryDetailList
+} = require("./meMock");
 
 module.exports = function resMocks(reqUrl, params) {
   let data = {
@@ -36,6 +42,15 @@ module.exports = function resMocks(reqUrl, params) {
       break;
     case "/messageBox/pageList":
       data.res = getMessageList;
+      break;
+    case "/entryList":
+      data.res = getEntyList;
+      break;
+    case "/listAllToread":
+      data.res = listAllToread;
+      break;
+    case "/employeeSalaryDetailList/year":
+      data.res = employeeSalaryDetailList;
       break;
     default: {
       break;

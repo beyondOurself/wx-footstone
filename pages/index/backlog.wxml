@@ -3,8 +3,11 @@
     <lg-con enabled triggered="{{conTriggered}}"  bind:onrefresh="handleConRefresh">
       <view class="container">
       <block wx:for="{{backlogList}}" wx:key="index">
+      <navigator class="animated  {{ index % 2 == 0 ? 'bounceInLeft' :  'bounceInRight' }}" url="." bind:tap="handleNavigator" >
         <lg-item iconCustom="iconfont" bgColor="{{item.color}}" iconType="{{item.iconType}}" taskName="{{item.taskName || item.workflow || item.title}}" taskStateText="{{item.taskStateText || item.taskTitle || item.roomLocation}}" assignTo="{{item.workflowOriginator || item.priorityText  || item.publishEmployeeName}}" time="{{ item.startDate || item.startTime || item.gmtCreate  }}" originType="{{item.originType}}" ></lg-item>
+        </navigator>
       </block>
       </view>
     </lg-con>
     <lg-loading show="{{loadingShow}}"></lg-loading>
+    <lg-toast id="toast" />

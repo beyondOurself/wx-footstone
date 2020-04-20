@@ -1,1 +1,5 @@
-<view class="lg-class body"></view>
+<view class="lg-class body">
+ <navigator open-type="navigateBack">
+  <lg-iconfont  type="fanhui" size="20"></lg-iconfont>
+ </navigator>
+</view>

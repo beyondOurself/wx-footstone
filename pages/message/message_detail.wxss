@@ -1,0 +1,25 @@
+/* pages/message/message_detail.wxss */
+.container,.title-wrap{
+
+  padding: 20rpx;
+}
+.body{
+    border-radius: 20rpx;
+    box-shadow: 0 2rpx 5rpx rgba(0, 0, 0,.2) ;
+}
+.title-wrap{
+
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+
+  color: #fff;
+  background-color:#2d8cf0 ;
+}
+.content-wrap{
+
+  padding: 25rpx;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+
+  background-color: #fff;
+}

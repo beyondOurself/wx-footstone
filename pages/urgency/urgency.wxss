@@ -1,1 +1,29 @@
-/* pages/urgency/urgency.wxss */
+.container-warp {
+
+  margin: 20rpx;
+  background-color: #fff;
+}
+
+.title {
+
+  padding: 10rpx 20rpx;
+  color: #8C8C8C;
+  background-color: #e3e5eb;
+
+}
+
+.qrcode-txt {
+
+  margin-left: 20rpx;
+  font-size: .9em;
+  padding: 40rpx 0;
+}
+
+.canvas-code {
+  margin: auto;
+}
+
+.scan-box {
+  text-align: center;
+  padding: 50rpx 0;
+}

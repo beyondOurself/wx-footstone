@@ -1,13 +1,29 @@
-<lg-nav titleTxt="消息" border >
- <!-- <navigator open-type="navigateBack" url="../"><lg-icon type="return" size="25"  /></navigator>  </view> -->
+<lg-nav titleTxt="消息" border>
 </lg-nav>
-
 <lg-con enabled triggered="{{conTriggered}}" bind:onrefresh="handleConRefresh">
 	<view class="container">
-
-		<lg-item></lg-item>
+		<view class="item-list-wrap">
+			<block wx:for="{{messageList}}" wx:key="index">
+				<navigator url="/pages/message/message_detail?content={{item.content}}&title={{item.title}}">
+					<view class="item-wrap">
+						<view class="item-after-wrap">
+							<view class="item-logo-wrap">
+								<lg-iconfont type="xinfeng" size="20" color="#fff"></lg-iconfont>
+							</view>
+							<view class="item-content-wrap">
+								<view><text>{{item.title}}</text></view>
+								<view><text>{{item.gmtCreate}}</text></view>
+							</view>
+						</view>
+						<view class="item-before-wrap">
+							<text class="item-message-status" wx:if="{{item.isRead !== 1}}">未读取</text>
+						</view>
+					</view>
+				</navigator>
+			</block>
+		</view>
 	</view>
 </lg-con>
 <lg-loading show="{{loadingShow}}"></lg-loading>
 <lg-none isShow="{{isNoneShow}}"></lg-none>
-<lg-back>666</lg-back>
+<lg-back></lg-back>

@@ -2,7 +2,10 @@
   "usingComponents": {
     "lg-nav": "../../components/lgView/nav",
     "lg-con": "../../components/lgView/container",
-    "lg-none": "../../components/lgView/none"
+    "lg-none": "../../components/lgView/none",
+    "lg-item": "../../components/lgView/item",
+    "lg-loading": "../../components/lgView/loading",
+    "lg-toast": "../../components/lgView/toast"
   },
   "navigationStyle": "custom"
 }

@@ -1,66 +1,47 @@
-// pages/urgency/urgency.js
+const _ = getApp();;
+const QRCode = require("../../utils/weapp-qrcode");
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    loadingShow: false,
   },
-
   /**
-   * 生命周期函数--监听页面加载
+   * 自定义方法
    */
-  onLoad: function (options) {
+  handleScanCode() {
 
+    wx.scanCode({
+      onlyFromCamera: true,
+      scanType: ['qrCode'],
+      success: (res) => {
+        console.log("success",res)
+      },
+      fail: (res) => {
+        console.log("fail"+res)
+      },
+      complete: (res) => {},
+    })
   },
-
   /**
-   * 生命周期函数--监听页面初次渲染完成
+   * 页面生命周期
    */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onShow() {
+    let _username = wx.getStorageSync('userInfo').username;
+    new QRCode('myQrcode', {
+      text: _username || "none",
+      width: 200,
+      height: 200,
+      padding: 12, // 生成二维码四周自动留边宽度，不传入默认为0
+      correctLevel: QRCode.CorrectLevel.L, // 二维码可辨识度
+      callback: (res) => {
+        console.log(res.path)
+        // 接下来就可以直接调用微信小程序的api保存到本地或者将这张二维码直接画在海报上面去，看各自需求
+      }
+    })
   }
+
+
 })

@@ -1,17 +1,27 @@
-<view class="lg-class body">
-    <view class="content-wrap">
-      <view class="content-main">
-          <view class="icon-wrap" style="background-color:{{bgColor}};">
-             <lg-iconfont color="#fff" type="{{iconType}}" size="{{iconSize}}" custom="{{iconCustom}}" ></lg-iconfont>
-          </view>
-          <view class="headline-wrap">
-             <text>{{taskName}}</text>
-             <text class="description">{{taskStateText}}</text>
-          </view>
-      </view>
-      <view class="content-footer">
-        <view>{{originType}}:<text>{{assignTo}}</text></view>
-        <view>时间: <text>{{time}}</text></view>
-      </view>
+<view class="lg-class lg-body">
+    <view class="lg-item-list-wrap">
+        <view class="lg-item-wrap">
+            <view class="lg-item-content-wrap">
+              <view class="lg-content-main-wrap">
+                 <view class="lg-icon-wrap" >
+                    <slot name="content-icon"></slot>
+                 </view>
+                 <view class="lg-content-descr-wrap">
+                      <slot name="content-desc"></slot>
+                 </view>
+              </view>
+              <view class="lg-icon-nav-wrap">
+                  <slot name="content-nav"></slot>
+              </view>
+            </view>
+            <view class="lg-item-footer-wrap">
+                <view class="lg-item-footer-before-wrap">
+                   <slot name="footer-before"></slot>
+                </view>
+                <view class="lg-item-footer-after-wrap">
+                   <slot name="footer-after"></slot>
+                </view>
+            </view>
+        </view>
     </view>
 </view>

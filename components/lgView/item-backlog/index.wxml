@@ -1,0 +1,17 @@
+<view class="lg-class body">
+    <view class="content-wrap">
+      <view class="content-main">
+          <view class="icon-wrap" style="background-color:{{bgColor}};">
+             <lg-iconfont color="#fff" type="{{iconType}}" size="{{iconSize}}" custom="{{iconCustom}}" ></lg-iconfont>
+          </view>
+          <view class="headline-wrap">
+             <text>{{taskName}}</text>
+             <text class="description">{{taskStateText}}</text>
+          </view>
+      </view>
+      <view class="content-footer">
+        <view>{{originType}}:<text>{{assignTo}}</text></view>
+        <view>时间: <text>{{time}}</text></view>
+      </view>
+    </view>
+</view>

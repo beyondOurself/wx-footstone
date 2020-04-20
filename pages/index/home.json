@@ -3,7 +3,8 @@
     "lg-nav":"../../components/lgView/nav",
     "lg-con":"../../components/lgView/container",
     "lg-entry":"../../components/lgView/entry",
-    "lg-iconfont":"../../components/lgView/iconfont"
+    "lg-iconfont":"../../components/lgView/iconfont",
+    "lg-toast":"../../components/lgView/toast"
   },
   "navigationStyle":"custom"
 
