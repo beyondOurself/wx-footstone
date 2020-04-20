@@ -57,8 +57,8 @@
 		<view class="operation-wrap"></view>
 		<view class="footer-wrap">
 			<view class="with-wrap">
-      <view> <lg-iconfont custom="iconfont" type="icon-guanyu" color="#ff9c00" size="14"></lg-iconfont> <text>  关于巨轮智能-App</text></view>
-      <text>v1.4.5</text></view>
+      <view> <lg-iconfont custom="iconfont" type="icon-guanyu" color="#ff9c00" size="14"></lg-iconfont> <text> 关于巨轮管家</text></view>
+      <text>v1.0.0</text></view>
 			<view class="logout-wrap" bind:tap="logout" >退出登录</view>
 		</view>
 
