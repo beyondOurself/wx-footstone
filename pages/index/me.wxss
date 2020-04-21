@@ -1,4 +1,4 @@
-.container {}
+
 
 .header-wrap,
 .infos-wrap,
@@ -19,14 +19,9 @@
 
   height: 150rpx;
   padding:0 35rpx;
-
+  margin-top: 0;
   display: flex;
   justify-content: space-between;
-}
-
-.infos-wrap {
-
- 
 }
 
 .footer-wrap {

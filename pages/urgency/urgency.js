@@ -1,4 +1,4 @@
-const _ = getApp();;
+const _ = getApp();
 const QRCode = require("../../utils/weapp-qrcode");
 Page({
 

@@ -21,9 +21,7 @@
 		<view class="content-wrap">
 			<view class="content">
 				<view class="scan-box" bind:tap="handleScanCode">
-   
               <lg-iconfont custom="iconfont" type="icon-saomiao" size="120" color="#2d8cf0"></lg-iconfont>
-
 				</view>
 			</view>
 		</view>

@@ -1,6 +1,6 @@
 .container-warp {
 
-  margin: 20rpx;
+  margin: 40rpx;
   background-color: #fff;
 }
 
