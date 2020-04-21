@@ -1,7 +1,8 @@
 ## 静态演示
 
 ### 首页
-![首页](https://github.com/beyondOurself/assets/blob/master/wx-home.jpg)
+
+<img src="https://github.com/beyondOurself/assets/blob/master/wx-home.jpg" width="375" alt="首页" > </img>
 
 ### 待办
 ![待办](https://github.com/beyondOurself/assets/blob/master/wx-backlog.jpg)
