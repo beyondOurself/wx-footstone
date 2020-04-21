@@ -13,6 +13,10 @@
 			{
 				"type": "folder",
 				"value": "template"
+			},
+			{
+				"type": "folder",
+				"value": "/pages/template"
 			}
 		]
 	},

@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/index/home",
-    "pages/urgency/urgency",
-    "pages/emolument/emolument",
     "pages/login/login",
-    "pages/message/message",
     "pages/index/backlog",
     "pages/index/me",
     "pages/index/toread",
+    "pages/index/home",
+    "pages/urgency/urgency",
+    "pages/emolument/emolument",
+    "pages/message/message",
     "pages/message/message_detail"
   ],
   "tabBar": {
